@@ -1,0 +1,15 @@
+{% extends 'layout/base.html' %}
+
+{% block _content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Lihat Barang</h1>
+    </div>
+    <div class="col-12">
+        <p>Nama Barang : {{ data.nama_barang }}</p>
+        <p>Harga : {{ data.harga }}</p>
+        <p>Stok : {{ data.stok }}</p>
+        <a href="/barang" class="btn btn-success">Kembali</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %}
+{% set page_active = 'login' %}
+
+{% block _content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="display-5 mt-4">Login</h1>
+    </div>
+    <div class="col-12">
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </div>
+            <p class="text-center">Belum Punya Akun ? <a href="/register">Daftar</a></p>
+        </form>
+    </div>
+</div>
+{% endblock %}
